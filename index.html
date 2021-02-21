@@ -3,6 +3,33 @@
     <title>ETA movement flash manual archive</title>
   </head>
   <body>
+    <h1>ETA movement flash-based assembly/disassembly archive</h1>
+    <p>
+      <a href="https://eta.ch">ETA</a>, the Swiss watch movement company
+      provides a wonderful resource for repairing and maintaining some of their
+      movements. It is an interactive flash program that provides step by step
+      dissassembly and assembly instructions. Unfortunately it was built using
+      Adobe Flash, which has been discontinued by Adobe along with all major
+      browser vendors. In order for these wonderful resources to not be lost to
+      time, I have made them available here. It uses
+      <a href="https://ruffle.rs">ruffle</a>, which is a flash emulator written
+      in the <a href="https://www.rust-lang.org">Rust programming language</a>,
+      which is then compiled to
+      <a href="https://webassembly.org">web assembly</a>, so it can run in the
+      browser.
+    </p>
+    <h2>Errata (6497)</h2>
+    <p>
+      There is a (potential) bug in the ruffle flash player that prevents the fonts of the menu to not display.  It appears that all other fonts are unaffected.  When viewing the 6497 movement, there will be three blank grey buttons.  Those grey buttons should say (for english):
+      <ul>
+        <li>
+          Dissassembling
+        </li>
+        <li>Assembling</li>
+        <li>Tools</li>
+      </ul>
+      Click on the required button and everything should work as normal
+    </p>
     <ul>
       <li>
         <a href="6497/index.html">6497</a>
