@@ -53,14 +53,18 @@
     <h2><a href="7750/index.html">7750 calibre</a></h2>
     <h4>Errata (7750)</h4>
     <ul>
+      <li>Both the assembling and disassembling module crashes and isn't currently usable.</li>
+      <li>For the modules that work (SSR, Adjust, Tools) the "back to menu" button isn't working and may crash ruffle.</li>
       <li>
         There is a (potential) bug in the ruffle flash player that prevents the
         fonts of the menu to not display. It appears that all other fonts are
         unaffected. When viewing the 7750 movement, there will be three blank
         grey buttons. Those grey buttons should say (for english):
         <ul>
-          <li>Dissassembling</li>
-          <li>Assembling</li>
+          <li>Dissassembling <b>Warning:</b>Crashes ruffle</b></li>
+          <li>Assembling <b>Warning:</b>Crashes ruffle</b></li>
+          <li>SSR (not sure what this means, but it shows how the chronograph complication works)</li>
+          <li>Adjust</li>
           <li>Tools</li>
         </ul>
         Click on the required button and everything should work as normal
